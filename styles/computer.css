@@ -1,0 +1,95 @@
+  /* For larger screens ≥ 768px */
+@media (min-width: 768px) {
+  .main {
+    flex-direction:column;
+    width:850px;
+    height:100vh;
+  }
+
+  .logo{
+  font-size: 26px;
+  color: rgb(0, 0, 0);
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+  .play {
+    display:flex;
+    flex-direction: column;
+  }
+  .computer_colours {
+    display:flex;
+    flex-direction: row;
+    height:100px;
+  }
+
+  .cpu-left {
+    flex:1;
+    display:flex;
+  }
+
+  .cpu-middle {
+    flex:3;
+    display:flex;
+  }
+
+  .cpu-right {
+    flex:1;
+    display: flex;
+  }
+  .cpu-left-newgame {
+    background-color: rgb(42, 81, 165);
+    border-radius:50%;
+    width:75px;
+    height:75px;
+    aspect-ratio: 1/1;
+    margin:auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .cpu-middle-colour {
+    background-color: brown;
+    border-radius:50%;
+    width:75px;
+    height:75px;
+    aspect-ratio: 1/1;
+    margin:auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: azure;
+    font-size: 40px;
+  }
+
+  .cpu-right-reset {
+    background-color: rgb(65, 194, 15);
+    border-radius:50%;
+    width:75px;
+    height:75px;
+    aspect-ratio: 1/1;
+    margin:auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .my_colours {
+    width:100%;
+    display:flex;
+    flex:10;
+  }
+
+  .play{
+    box-sizing: border-box;
+    flex:10;
+    height:10%;
+  }
+  .footer{
+    box-sizing: border-box;
+    flex:2;
+    height:10%;
+  }
+}
