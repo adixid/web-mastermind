@@ -47,25 +47,53 @@ body {
 .cpu-left {
   border: 1px black solid;
   flex:1;
+  display:flex;
 }
 
 .cpu-middle {
   border: 1px black solid;
-  display:flex;
   flex:3;
+  display:flex;
 }
 
 .cpu-right {
   border: 1px black solid;
   flex:1;
+  display: flex;
 }
-
-.cpu_col {
+.cpu-left-newgame {
   background-color: brown;
   border-radius:50%;
-  flex:1;
+  width: 13vw;
+  aspect-ratio: 1/1;
+  margin:auto;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 
+.cpu-middle-colour {
+  background-color: brown;
+  border-radius:50%;
+  flex:none;
+  width: 13vw;
+  aspect-ratio: 1/1;
+  margin:auto;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cpu-right-reset {
+  background-color: brown;
+  border-radius:50%;
+  width: 13vw;
+  aspect-ratio: 1/1;
+  margin:auto;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
 
 
 .my_colours {
