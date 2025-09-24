@@ -9,5 +9,9 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-family: 'Courier New', Courier, monospace;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  overflow: hidden; /* prevent scrolling */
+  -webkit-touch-callout: none;  /* disables callout on long press */
+  -webkit-user-select: none;    /* disables text selection */
+  user-select: none;
 }
