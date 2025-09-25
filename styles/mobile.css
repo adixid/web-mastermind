@@ -14,20 +14,27 @@
 
 .logo-kate {
   flex: 4;
-  background-color: blue;
+  
+
+  /* temporary  */
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  font-size: 20px;
+  color: azure;
+  /* end of temporary */
 }
 
 .hamburger-menu {
   flex: 1;
-  background-color: blueviolet;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 50px;
+  color: rgb(61, 28, 18);
 }
 
 .computer-colours {
-  background-color:rgb(56, 165, 42);
   height:10dvh; 
   width: 100%;
   display: flex;
@@ -38,7 +45,7 @@
 }
 
 .computer-colour, .resign-button  {
-  background-color: aquamarine;
+  background-color: rgb(207, 193, 67);
   height: 80%;
   aspect-ratio: 1/1;
   border-radius: 50%;
@@ -50,7 +57,7 @@
 
 .resign-button {
   flex-wrap: wrap;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .my-colours {
@@ -59,7 +66,7 @@
 }
 
 .my-row {
-  background-color:rgb(165, 87, 42);
+  
   width:100%;
   height:10dvh;
   display: flex;
@@ -126,7 +133,7 @@
 }
 
 .confirm-button {
-  background-color: brown;
+  background-color: rgb(61, 28, 18);
   height:95%;
   width:90%;
   border-radius:15%;
@@ -152,10 +159,12 @@
   height:90%;
   flex: 1;
   border-radius: 25%;
+  border: 2px rgb(61, 28, 18) solid;
 }
 
 #js_red {
   background-color: red;
+  
 }
 
 #js_green {
