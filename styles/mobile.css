@@ -13,25 +13,43 @@
 }
 
 .logo-kate {
-  flex: 4;
-  
-
-  /* temporary  */
+  flex: 2;
+  /**/
   display: flex;
   align-items: center;
   padding-left: 15px;
-  font-size: 20px;
-  color: azure;
-  /* end of temporary */
+  font-size: 30px;
+  color: aliceblue;
+  /**/
 }
 
-.hamburger-menu {
-  flex: 1;
+.notification-tab {
+  margin: 5px;
+  height: 95%;
+  width: 95%;
+  border-radius: 8%;
+  background-color: rgb(184, 31, 31);
+  color:beige;
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+.notify-tab-row {
+  height: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 50px;
-  color: rgb(61, 28, 18);
+}
+
+#notify-line1 {
+  align-items: flex-end;
+}
+
+#notify-line2 {
+  align-items: flex-start;
 }
 
 .computer-colours {
@@ -42,6 +60,7 @@
   align-items: center;  
   justify-content: center;
   gap:10px;
+  border-bottom: 1px white solid;
 }
 
 .computer-colour, .resign-button  {
@@ -56,6 +75,9 @@
 }
 
 .resign-button {
+  border: 1px rgb(207, 193, 67) solid;
+  background-color: rgb(61, 28, 18);
+  color: rgb(207, 193, 67);
   flex-wrap: wrap;
   font-size: 16px;
 }
@@ -63,10 +85,11 @@
 .my-colours {
   display: flex;
   flex-direction: column;
+  width:100%;
+  
 }
 
 .my-row {
-  
   width:100%;
   height:10dvh;
   display: flex;
@@ -106,13 +129,13 @@
 }
 
 .eval {
-  background-color: black;
+  background-color: rgb(104, 53, 38);
   height:55%;
   border-radius: 50%;
   aspect-ratio: 1/1;
 }
 
-.colour-picker {
+#colour-picker {
   width:100%;
   display: flex;
 }
@@ -132,8 +155,9 @@
   align-items: center;
 }
 
-.confirm-button {
+#confirm-button {
   background-color: rgb(61, 28, 18);
+  border: 2px rgb(145, 145, 145) solid;
   height:95%;
   width:90%;
   border-radius:15%;
@@ -142,10 +166,15 @@
   align-items: center;
   font-size: 30px;
   font-weight: bolder;
-  color: aliceblue;
+  color: rgb(104, 53, 38);
+}
+
+#confirm-button:active {
+  border: 2px white solid;
 }
 
 .colour-picker-colours-row {
+  padding-left:2px;
   height:10dvh; 
   width: auto;
   display: flex;
@@ -164,7 +193,6 @@
 
 #js_red {
   background-color: red;
-  
 }
 
 #js_green {
@@ -186,8 +214,97 @@
 #js_black {
   background-color: black;
 }
-/*
-#js_myRow6, #js_myRow5, #js_myRow4, #js_myRow3, #js_myRow2   {
-  display: none;
+
+#js_red:active, #js_green:active, #js_blue:active, #js_yellow:active, #js_white:active, #js_black:active {
+  box-sizing: border-box;
+  border: 2px white solid;
 }
-*/
+
+#final-screen {
+  box-sizing: border-box;
+  border: 3px rgb(61, 28, 18) solid;
+  background-color: rgb(61, 28, 18);
+  color: rgb(228, 228, 103);
+  border-radius: 5px;
+  height:20dvh;
+  width:100%;
+  display: none;
+  flex-direction: column;
+}
+
+.final-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  width: 100%;
+  font-size: 20px;
+
+}
+
+#final-row1 {
+  display: flex;
+  align-items: flex-end;
+}
+
+#final-row2 {
+  display: flex;
+  align-items: flex-start;
+}
+
+#resign-or-not {
+  box-sizing: border-box;
+  border: 3px rgb(61, 28, 18) solid;
+  background-color: rgb(61, 28, 18);
+  color: rgb(228, 228, 103);
+  border-radius: 5px;
+  height:20dvh;
+  width:100%;
+  display: none;
+  flex-direction: column;
+}
+
+.resign-or-not-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50%;
+  width: 100%;
+  font-size: 20px;
+}
+
+.resign-options {
+  width: 50%;
+  height: 100%;
+  border-radius: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0 10px 5px 10px;
+}
+
+#resign-yes {
+  background-color: red;
+}
+
+#resign-no {
+  background-color: green;
+}
+
+#instructions {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 100%;
+  height: 50dvh;
+  font-size: 20px;
+  color: rgb(233, 118, 65);
+  display: none;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.instruction-text {
+  display: flex;
+  justify-content: center;
+}
