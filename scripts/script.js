@@ -89,7 +89,7 @@ function evaluateRound() {
     if (myRound < 5) {
       compareColours(); /* evaluate round */
       myRound ++;
-      /*document.getElementById('instructions').style.display = 'none';*/
+      document.getElementById('instructions').style.display = 'none';
       if (gameOver === false) {
         document.getElementById(`js_myRow${myRound+1}`).style.display = 'flex';
         confirmButtonGray();
@@ -156,7 +156,7 @@ function newGame() {
   document.getElementById('final-screen').style.display = 'none';
   document.getElementById('colour-picker').style.display = 'flex';
   confirmButtonGray('yes');
-  /*document.getElementById('instructions').style.display = 'flex';*/
+  document.getElementById('instructions').style.display = 'flex';
 }
 
 function compareColours() {
@@ -240,8 +240,10 @@ function startAgainButton() {
 }
 
 function resignGame() {
-  document.getElementById('colour-picker').style.display = 'none';
-  document.getElementById('resign-or-not').style.display = 'flex';
+  if ((myRound <= 5) && (gameOver === false)) {
+    document.getElementById('colour-picker').style.display = 'none';
+    document.getElementById('resign-or-not').style.display = 'flex';
+  }
 }
 
 function resign_yes() {
