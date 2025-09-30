@@ -14,140 +14,165 @@
   <div class="main">
     <div class="logo">
       <div class="logo-kate">MASTER</div>
-      <div class="hamburger-menu">☰</div>
+      <div class="notification-tab" id="notify-tab">
+        <div class="notify-tab-row" id="notify-line1">Please select</div>
+        <div class="notify-tab-row" id="notify-line2">four different colours !</div>
+      </div>
     </div>
     <div class="computer-colours">
-      <div class="computer-colour">?</div>
-      <div class="computer-colour">?</div>
-      <div class="computer-colour">?</div>
-      <div class="computer-colour">?</div>
-      <div class="resign-button">SHOW</div>
+      <div class="computer-colour" id="js_computer1">?</div>
+      <div class="computer-colour" id="js_computer2">?</div>
+      <div class="computer-colour" id="js_computer3">?</div>
+      <div class="computer-colour" id="js_computer4">?</div>
+      <div class="resign-button" onclick="resignGame()">SHOW</div>
     </div>
     
-    <div class="my-colours"></div>
+    <div class="my-colours">
       <div class="my-row" id="js_myRow1">
-        <div class="my-colour"></div>
-        <div class="my-colour"></div>
-        <div class="my-colour"></div>
-        <div class="my-colour"></div>
+        <div class="my-colour" id="js1_1" onclick="enterColour('js1_1')"></div>
+        <div class="my-colour" id="js1_2" onclick="enterColour('js1_2')"></div>
+        <div class="my-colour" id="js1_3" onclick="enterColour('js1_3')"></div>
+        <div class="my-colour" id="js1_4" onclick="enterColour('js1_4')"></div>
         <div class="evaluation">
           <div class="eval-row">
-            <div class="eval"></div>
-            <div class="eval"></div>
+            <div class="eval" id="jse1_1"></div>
+            <div class="eval" id="jse1_2"></div>
           </div>
-          
           <div class="eval-row">
-            <div class="eval"></div>
-            <div class="eval"></div>
+            <div class="eval" id="jse1_3"></div>
+            <div class="eval" id="jse1_4"></div>
           </div>
         </div>
       </div>
 
       <div class="my-row" id="js_myRow2">
-        <div class="my-colour"></div>
-        <div class="my-colour"></div>
-        <div class="my-colour"></div>
-        <div class="my-colour"></div>
+        <div class="my-colour" id="js2_1" onclick="enterColour('js2_1')"></div>
+        <div class="my-colour" id="js2_2" onclick="enterColour('js2_2')"></div>
+        <div class="my-colour" id="js2_3" onclick="enterColour('js2_3')"></div>
+        <div class="my-colour" id="js2_4" onclick="enterColour('js2_4')"></div>
         <div class="evaluation">
           <div class="eval-row">
-            <div class="eval"></div>
-            <div class="eval"></div>
+            <div class="eval" id="jse2_1"></div>
+            <div class="eval" id="jse2_2"></div>
           </div>
-          
           <div class="eval-row">
-            <div class="eval"></div>
-            <div class="eval"></div>
+            <div class="eval" id="jse2_3"></div>
+            <div class="eval" id="jse2_4"></div>
           </div>
         </div>
       </div>
       <div class="my-row" id="js_myRow3">
-        <div class="my-colour"></div>
-        <div class="my-colour"></div>
-        <div class="my-colour"></div>
-        <div class="my-colour"></div>
+        <div class="my-colour" id="js3_1" onclick="enterColour('js3_1')"></div>
+        <div class="my-colour" id="js3_2" onclick="enterColour('js3_2')"></div>
+        <div class="my-colour" id="js3_3" onclick="enterColour('js3_3')"></div>
+        <div class="my-colour" id="js3_4" onclick="enterColour('js3_4')"></div>
         <div class="evaluation">
           <div class="eval-row">
-            <div class="eval"></div>
-            <div class="eval"></div>
+            <div class="eval" id="jse3_1"></div>
+            <div class="eval" id="jse3_2"></div>
           </div>
-          
           <div class="eval-row">
-            <div class="eval"></div>
-            <div class="eval"></div>
+            <div class="eval" id="jse3_3"></div>
+            <div class="eval" id="jse3_4"></div>
           </div>
         </div>
       </div>
       <div class="my-row" id="js_myRow4">
-        <div class="my-colour"></div>
-        <div class="my-colour"></div>
-        <div class="my-colour"></div>
-        <div class="my-colour"></div>
+        <div class="my-colour" id="js4_1" onclick="enterColour('js4_1')"></div>
+        <div class="my-colour" id="js4_2" onclick="enterColour('js4_2')"></div>
+        <div class="my-colour" id="js4_3" onclick="enterColour('js4_3')"></div>
+        <div class="my-colour" id="js4_4" onclick="enterColour('js4_4')"></div>
         <div class="evaluation">
           <div class="eval-row">
-            <div class="eval"></div>
-            <div class="eval"></div>
+            <div class="eval" id="jse4_1"></div>
+            <div class="eval" id="jse4_2"></div>
           </div>
-          
           <div class="eval-row">
-            <div class="eval"></div>
-            <div class="eval"></div>
+            <div class="eval" id="jse4_3"></div>
+            <div class="eval" id="jse4_4"></div>
           </div>
         </div>
       </div>
       <div class="my-row" id="js_myRow5">
-        <div class="my-colour"></div>
-        <div class="my-colour"></div>
-        <div class="my-colour"></div>
-        <div class="my-colour"></div>
+        <div class="my-colour" id="js5_1" onclick="enterColour('js5_1')"></div>
+        <div class="my-colour" id="js5_2" onclick="enterColour('js5_2')"></div>
+        <div class="my-colour" id="js5_3" onclick="enterColour('js5_3')"></div>
+        <div class="my-colour" id="js5_4" onclick="enterColour('js5_4')"></div>
         <div class="evaluation">
           <div class="eval-row">
-            <div class="eval"></div>
-            <div class="eval"></div>
+            <div class="eval" id="jse5_1"></div>
+            <div class="eval" id="jse5_2"></div>
           </div>
-          
           <div class="eval-row">
-            <div class="eval"></div>
-            <div class="eval"></div>
+            <div class="eval" id="jse5_3"></div>
+            <div class="eval" id="jse5_4"></div>
           </div>
         </div>
       </div>
       <div class="my-row" id="js_myRow6">
-        <div class="my-colour"></div>
-        <div class="my-colour"></div>
-        <div class="my-colour"></div>
-        <div class="my-colour"></div>
+        <div class="my-colour" id="js6_1" onclick="enterColour('js6_1')"></div>
+        <div class="my-colour" id="js6_2" onclick="enterColour('js6_2')"></div>
+        <div class="my-colour" id="js6_3" onclick="enterColour('js6_3')"></div>
+        <div class="my-colour" id="js6_4" onclick="enterColour('js6_4')"></div>
         <div class="evaluation">
           <div class="eval-row">
-            <div class="eval"></div>
-            <div class="eval"></div>
+            <div class="eval" id="jse6_1"></div>
+            <div class="eval" id="jse6_2"></div>
           </div>
-          
           <div class="eval-row">
-            <div class="eval"></div>
-            <div class="eval"></div>
+            <div class="eval" id="jse6_3"></div>
+            <div class="eval" id="jse6_4"></div>
           </div>
         </div>
       </div>
+    </div>
   
-      <div class="colour-picker">
-        <div class="colour-picker-colours">
-            <div class="colour-picker-colours-row">
-            <div class="colour-picker-choose" id="js_red"></div>
-            <div class="colour-picker-choose" id="js_green"></div>
-            <div class="colour-picker-choose" id="js_blue"></div>
-          </div>
+    <div id="colour-picker">
+      <div class="colour-picker-colours">
           <div class="colour-picker-colours-row">
-            <div class="colour-picker-choose" id="js_yellow"></div>
-            <div class="colour-picker-choose" id="js_white"></div>
-            <div class="colour-picker-choose" id="js_black"></div>
-          </div>
+          <div class="colour-picker-choose" id="js_red" onclick="pickColour('red')"></div>
+          <div class="colour-picker-choose" id="js_green" onclick="pickColour('green')"></div>
+          <div class="colour-picker-choose" id="js_blue" onclick="pickColour('blue')"></div>
         </div>
-        <div class="colour-picker-confirm">
-          <div class="confirm-button">OK</div>
+        <div class="colour-picker-colours-row">
+          <div class="colour-picker-choose" id="js_yellow" onclick="pickColour('yellow')"></div>
+          <div class="colour-picker-choose" id="js_white" onclick="pickColour('white')"></div>
+          <div class="colour-picker-choose" id="js_black" onclick="pickColour('black')"></div>
         </div>
       </div>
-  </div>
-
+      <div class="colour-picker-confirm">
+        <div id="confirm-button" onclick="evaluateRound()">OK</div>
+      </div>
+    </div>
+    <div id="final-screen" onclick="newGame()">
+      <div class="final-row" id="final-row1">Please tap here</div>
+      <div class="final-row" id="final-row2">to play again</div>
+    </div>
+    <div id="resign-or-not">
+      <div class="resign-or-not-row">Would you like to see my colours?</div>
+      <div class="resign-or-not-row">
+        <div class="resign-options" id="resign-yes" onclick="resign_yes()">YES</div>
+        <div class="resign-options" id="resign-no" onclick="resign_no()">NO</div>
+      </div>
+    </div>
+    <!--
+    <div id="instructions">
+      <div class="instruction-text">Can you crack the code in just 6 tries?</div>
+      <div class="instruction-text">Your goal is to guess a secret</div>
+      <div class="instruction-text">sequence of 4 colored pegs</div>
+      <div class="instruction-text">with no repeated colors.</div>
+      <div class="instruction-text">After each guess, you'll receive clues:</div>
+      <div class="instruction-text">Black pegs mean a color</div>
+      <div class="instruction-text">is in the correct position.</div>
+      <div class="instruction-text">White pegs mean the color is right,</div>
+      <div class="instruction-text">but in the wrong spot.</div>
+      <div class="instruction-text">Use logic and deduction</div>
+      <div class="instruction-text">to solve the puzzle</div>
+      <div class="instruction-text">before you run out of guesses!</div>
+      <div class="instruction-text">Good luck !</div>
+    </div>
+    -->
+  
   <script src="scripts/script.js"></script>
 </body>
 
