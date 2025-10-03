@@ -1,4 +1,4 @@
-.logo-kate, .computer-colour, .resign-button, #computer-colours-border, .my-colour, .colour-picker-choose, #confirm-button, .instruction-text {
+.logo-kate, .notification-tab, .computer-colour, .resign-button, #computer-colours-border, .my-colour, .colour-picker-choose, #confirm-button, .instruction-text, #final-screen, #resign-or-not {
   opacity: 0;
   transform: translateY(30px);
   animation: fadeInUp 0.5s forwards;
@@ -13,6 +13,10 @@
 
 .logo-kate {
   animation-delay: 0s;
+}
+
+.notification-tab, #final-screen, #resign-or-not  {
+  animation-delay: 0.05s;
 }
 
 #js_computer1 {
@@ -127,6 +131,7 @@
 .instruction-text:nth-child(13) {
   animation-delay: 1.45s;
 }
+
 
 #js2_1, #js3_1, #js4_1, #js5_1, #js6_1   {
   animation-delay: 0.1s;
