@@ -22,8 +22,6 @@ img {
   display: flex;
   align-items: center;
   padding-left: 15px;
-  font-size: 30px;
-  color: aliceblue;
   /**/
 }
 
@@ -31,7 +29,7 @@ img {
   margin: 5px;
   height: 95%;
   width: 95%;
-  border-radius: 8%;
+  border-radius: 15px;
   background-color: rgb(184, 31, 31);
   color:beige;
   flex: 3;
@@ -168,7 +166,7 @@ img {
   border: 2px rgb(145, 145, 145) solid;
   height:95%;
   width:90%;
-  border-radius:15%;
+  border-radius:15px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -195,7 +193,7 @@ img {
 .colour-picker-choose {
   height:90%;
   flex: 1;
-  border-radius: 25%;
+  border-radius: 15px;
   border: 2px rgb(61, 28, 18) solid;
 }
 
@@ -284,7 +282,7 @@ img {
 .resign-options {
   width: 50%;
   height: 100%;
-  border-radius: 25%;
+  border-radius: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
