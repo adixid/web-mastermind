@@ -53,6 +53,7 @@ function pickColour(colour) {
 
 function enterColour(myId) {
   document.getElementById('notify-tab').style.display = 'none';
+
   if (gameOver === false) {
     for (let i=0; i<6; i++) {
       if ((myRound === i) && (myIds[i].includes(myId))) {
