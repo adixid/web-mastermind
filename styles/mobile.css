@@ -12,6 +12,10 @@
   display: flex;
 }
 
+img {
+  height: 80%;
+}
+
 .logo-kate {
   flex: 2;
   /**/
@@ -60,6 +64,10 @@
   align-items: center;  
   justify-content: center;
   gap:10px;
+  
+}
+
+#computer-colours-border {
   border-bottom: 1px white solid;
 }
 
@@ -276,7 +284,7 @@
 .resign-options {
   width: 50%;
   height: 100%;
-  border-radius: 15%;
+  border-radius: 25%;
   display: flex;
   justify-content: center;
   align-items: center;

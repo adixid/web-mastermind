@@ -1,0 +1,142 @@
+.logo-kate, .computer-colour, .resign-button, #computer-colours-border, .my-colour, .colour-picker-choose, #confirm-button, .instruction-text {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeInUp 0.5s forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.logo-kate {
+  animation-delay: 0s;
+}
+
+#js_computer1 {
+  animation-delay: 0.1s;
+}
+#js_computer2 {
+  animation-delay: 0.2s;
+}
+#js_computer3 {
+  animation-delay: 0.3s;
+}
+#js_computer4 {
+  animation-delay: 0.4s;
+}
+
+.resign-button {
+  animation-delay: 0.5s;
+}
+
+#js1_1 {
+  animation-delay: 0.5s;
+}
+
+#js1_2 {
+  animation-delay: 0.6s;
+}
+
+#js1_3 {
+  animation-delay: 0.7s;
+}
+
+#js1_4 {
+  animation-delay: 0.8s;
+}
+
+#js_red {
+  animation-delay: 0.3s;
+}
+
+#js_green {
+  animation-delay: 0.4s;
+}
+
+#js_blue {
+  animation-delay: 0.5s;
+}
+
+#js_yellow {
+  animation-delay: 0.6s;
+}
+
+#js_white {
+  animation-delay: 0.7s;
+}
+
+#js_black {
+  animation-delay: 0.8s;
+}
+
+#confirm-button {
+  animation-delay: 0.9s;
+}
+
+.instruction-text:nth-child(1) {
+  animation-delay: 0.8s;
+}
+
+.instruction-text:nth-child(2) {
+  animation-delay: 0.85s;
+}
+
+.instruction-text:nth-child(3) {
+  animation-delay: 0.9s;
+}
+
+.instruction-text:nth-child(4) {
+  animation-delay: 0.95s;
+}
+
+.instruction-text:nth-child(5) {
+  animation-delay: 1s;
+}
+
+.instruction-text:nth-child(6) {
+  animation-delay: 1.05s;
+}
+
+.instruction-text:nth-child(7) {
+  animation-delay: 1.1s;
+}
+
+.instruction-text:nth-child(8) {
+  animation-delay: 1.15s;
+}
+
+.instruction-text:nth-child(9) {
+  animation-delay: 1.25s;
+}
+
+.instruction-text:nth-child(10) {
+  animation-delay: 1.3s;
+}
+
+.instruction-text:nth-child(11) {
+  animation-delay: 1.35s;
+}
+
+.instruction-text:nth-child(12) {
+  animation-delay: 1.4s;
+}
+
+.instruction-text:nth-child(13) {
+  animation-delay: 1.45s;
+}
+
+#js2_1, #js3_1, #js4_1, #js5_1, #js6_1   {
+  animation-delay: 0.1s;
+}
+#js2_2, #js3_2, #js4_2, #js5_2, #js6_2   {
+  animation-delay: 0.2s;
+}
+#js2_3, #js3_3, #js4_3, #js5_3, #js6_3   {
+  animation-delay: 0.3s;
+}
+#js2_4, #js3_4, #js4_4, #js4_3, #js6_4  {
+  animation-delay: 0.4s;
+}
