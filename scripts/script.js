@@ -103,9 +103,8 @@ function evaluateRound() {
       } else {
         notificationGameOver('defeat');
       }
-    
+  
       startAgainButton();
-
     }  
     prepareColourArray();
   }
@@ -126,9 +125,33 @@ function confirmButtonGray(value) {
   if (value === 'yes') {
     document.getElementById('confirm-button').style.border = '2px rgb(145, 145, 145) solid';
     document.getElementById('confirm-button').style.color= 'rgb(145, 145, 145)';
+    document.getElementById('confirm-button').style.backgroundColor = 'rgb(104, 53, 38)';
+    confirmButtonHover('yes');
+  
   } else if (value === 'no') {
     document.getElementById('confirm-button').style.border = '2px rgb(207, 193, 67) solid';
-    document.getElementById('confirm-button').style.color= 'rgb(207, 193, 67)';
+    document.getElementById('confirm-button').style.color = 'rgb(207, 193, 67)';
+    document.getElementById('confirm-button').style.backgroundColor = 'rgb(61, 28, 18)';
+    confirmButtonHover('no');
+  }
+}
+
+function confirmButtonHover(value) {
+  myElement = document.getElementById('confirm-button');
+  if (value === 'yes') {
+    myElement.addEventListener('mouseenter', () => {
+      myElement.style.backgroundColor = 'rgba(117, 53, 34, 1)';
+    });
+    myElement.addEventListener('mouseleave', () => {
+      myElement.style.backgroundColor = 'rgb(104, 53, 38)';
+    });
+  } else {
+      myElement.addEventListener('mouseenter', () => {
+        myElement.style.backgroundColor = 'rgba(117, 53, 34, 1)';
+    });
+      myElement.addEventListener('mouseleave', () => {
+        myElement.style.backgroundColor = 'rgb(61, 28, 18)';
+    });
   }
 }
 
