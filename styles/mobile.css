@@ -13,6 +13,7 @@
 }
 
 img {
+  transition: 0.3s;
   height: 80%;
 }
 
@@ -26,6 +27,7 @@ img {
 }
 
 .notification-tab {
+  transition: 0.3s;
   margin: 5px;
   height: 95%;
   width: 95%;
@@ -55,6 +57,7 @@ img {
 }
 
 .computer-colours {
+  transition: 0.3s;
   height:10dvh; 
   width: 100%;
   display: flex;
@@ -66,10 +69,12 @@ img {
 }
 
 #computer-colours-border {
+  transition: 0.3s;
   border-bottom: 1px white solid;
 }
 
 .computer-colour, .resign-button  {
+  transition: 0.3s;
   background-color: rgb(207, 193, 67);
   height: 80%;
   aspect-ratio: 1/1;
@@ -89,6 +94,7 @@ img {
 }
 
 .my-colours {
+  transition: 0.3s;
   display: flex;
   flex-direction: column;
   width:100%;
@@ -115,6 +121,7 @@ img {
 }
 
 .my-colour {
+  transition: 0.3s;
   box-sizing: border-box;
   border: 1px white solid;
   border-radius: 50%;
@@ -162,7 +169,7 @@ img {
 }
 
 #confirm-button {
-  background-color: rgb(61, 28, 18);
+  background-color: rgb(104, 53, 38);
   border: 2px rgb(145, 145, 145) solid;
   height:95%;
   width:90%;
